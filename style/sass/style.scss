@@ -22,5 +22,16 @@ body{
 
 .nav-container{
     @extend .container;
+
+    a{
+        display: block;
+        color: $font-lite-blue;
+        padding: 1em 1.5em;
+        border-bottom: 3px solid $dark-blue;
+    }
+
+    a:hover{
+        border-bottom: 3px solid $font-lite-blue;
+    }
 }
 

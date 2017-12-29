@@ -12,4 +12,12 @@ body {
   background-color: #0089cd;
   color: #d7f4ff; }
 
+.nav-container a {
+  display: block;
+  color: #d7f4ff;
+  padding: 1em 1.5em;
+  border-bottom: 3px solid #0089cd; }
+.nav-container a:hover {
+  border-bottom: 3px solid #d7f4ff; }
+
 /*# sourceMappingURL=style.css.map */
