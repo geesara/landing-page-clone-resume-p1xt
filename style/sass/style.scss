@@ -79,14 +79,20 @@ body{
 }
 
 .content{
+    display: grid;
+    grid-template-columns: auto 1000px auto;
 
+    .gray-background{
+        background-color: $gray;
+    }
     .content-container{
         @extend .container;
         flex-wrap: nowrap;
+        padding: 0;
 
         .address{
             flex-grow: 1;
-            padding: 40px 30px 10px 0;
+            padding: 40px 30px 10px 10px;
             background-color: $gray;
 
             h4{
@@ -99,6 +105,12 @@ body{
             padding: 40px 20px 10px 40px;
             box-sizing: border-box;
         }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .content{
+        grid-template-columns: auto 100% auto;
     }
 }
 
