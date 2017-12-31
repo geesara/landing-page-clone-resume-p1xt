@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
 
-.container, .nav-container, .title-area .ta-container {
+.container, .nav-container, .title-area .ta-container, .content .content-container {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -47,5 +47,18 @@ body {
         width: 100%;
         height: auto;
         border-radius: 50%; }
+
+.content .content-container {
+  flex-wrap: nowrap; }
+  .content .content-container .address {
+    flex-grow: 1;
+    padding: 40px 30px 10px 0;
+    background-color: #f0f0f0; }
+    .content .content-container .address h4 {
+      color: #0099d2; }
+  .content .content-container .letter {
+    width: 70%;
+    padding: 40px 20px 10px 40px;
+    box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */

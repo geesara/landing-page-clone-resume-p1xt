@@ -1,5 +1,6 @@
 $dark-blue: #0089cd;
 $lite-blue: #08a1db;
+$gray: #f0f0f0;
 $font-lite-blue: #d7f4ff;
 $font-dark-blue: #0099d2;
 $font: 'Roboto', sans-serif;
@@ -73,6 +74,30 @@ body{
                 height: auto;
                 border-radius: 50%;
             }
+        }
+    }
+}
+
+.content{
+
+    .content-container{
+        @extend .container;
+        flex-wrap: nowrap;
+
+        .address{
+            flex-grow: 1;
+            padding: 40px 30px 10px 0;
+            background-color: $gray;
+
+            h4{
+                color: $font-dark-blue;
+            }
+        }
+
+        .letter{
+            width: 70%;
+            padding: 40px 20px 10px 40px;
+            box-sizing: border-box;
         }
     }
 }
