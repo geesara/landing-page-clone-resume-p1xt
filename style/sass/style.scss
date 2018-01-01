@@ -120,3 +120,29 @@ body{
     }
 }
 
+.follow{
+    background-color: $lite-blue;
+    padding: 20px 0;
+
+    .follow-container{
+        @extend .container;
+
+        .link{
+            flex-grow: 1;
+            text-align: center;
+            color: $font-lite-blue;
+
+            i{
+                background-color: $dark-blue;
+                width: 1em;
+                padding: 1em;
+                border-radius: 50%;
+            }
+
+            a{
+                color: $font-lite-blue;
+                text-decoration: none;
+            }
+        }
+    }
+}
