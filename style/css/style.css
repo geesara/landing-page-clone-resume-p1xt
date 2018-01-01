@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
 
-.container, .nav-container, .title-area .ta-container, .content .content-container {
+.container, .nav-container, .title-area .ta-container, .content .content-container, .follow .follow-container, .footer .footer-container {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -69,12 +69,33 @@ body {
         color: #0099d2; }
     .content .content-container .letter {
       width: 70%;
-      padding: 40px 20px 10px 40px;
+      padding: 40px 20px 60px 40px;
       box-sizing: border-box;
       box-shadow: -3px 0px 5px #b3b3b3; }
 
 @media only screen and (max-width: 1000px) {
   .content {
     grid-template-columns: auto 100% auto; } }
+.follow {
+  background-color: #08a1db;
+  padding: 20px 0; }
+  .follow .follow-container .link {
+    flex-grow: 1;
+    text-align: center;
+    color: #d7f4ff; }
+    .follow .follow-container .link i {
+      background-color: #0089cd;
+      width: 1em;
+      padding: 1em;
+      border-radius: 50%; }
+    .follow .follow-container .link a {
+      color: #d7f4ff;
+      text-decoration: none; }
+
+.footer {
+  background-color: #0089cd;
+  color: #d7f4ff; }
+  .footer .footer-container {
+    justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */

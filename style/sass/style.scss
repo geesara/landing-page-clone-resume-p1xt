@@ -107,7 +107,7 @@ body{
 
         .letter{
             width: 70%;
-            padding: 40px 20px 10px 40px;
+            padding: 40px 20px 60px 40px;
             box-sizing: border-box;
             box-shadow: -3px 0px 5px #b3b3b3;
         }
@@ -120,3 +120,39 @@ body{
     }
 }
 
+.follow{
+    background-color: $lite-blue;
+    padding: 20px 0;
+
+    .follow-container{
+        @extend .container;
+
+        .link{
+            flex-grow: 1;
+            text-align: center;
+            color: $font-lite-blue;
+
+            i{
+                background-color: $dark-blue;
+                width: 1em;
+                padding: 1em;
+                border-radius: 50%;
+            }
+
+            a{
+                color: $font-lite-blue;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: $dark-blue;
+    color: $font-lite-blue;
+
+    .footer-container{
+        @extend .container;
+        justify-content: space-between;
+    }
+}
