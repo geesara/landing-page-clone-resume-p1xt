@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
 
-.container, .nav-container, .title-area .ta-container, .content .content-container, .follow .follow-container {
+.container, .nav-container, .title-area .ta-container, .content .content-container, .follow .follow-container, .footer .footer-container {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -91,5 +91,11 @@ body {
     .follow .follow-container .link a {
       color: #d7f4ff;
       text-decoration: none; }
+
+.footer {
+  background-color: #0089cd;
+  color: #d7f4ff; }
+  .footer .footer-container {
+    justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */

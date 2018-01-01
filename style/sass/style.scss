@@ -146,3 +146,13 @@ body{
         }
     }
 }
+
+.footer{
+    background-color: $dark-blue;
+    color: $font-lite-blue;
+
+    .footer-container{
+        @extend .container;
+        justify-content: space-between;
+    }
+}
