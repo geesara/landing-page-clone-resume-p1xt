@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
 
-.container, .nav-container, .title-area .ta-container, .content .content-container, .follow .follow-container, .footer .footer-container, .portfolio:nth-child(odd) .portfolio-container, .portfolio:nth-child(even) .portfolio-container {
+.container, .nav-container, .title-area .ta-container, .content .content-container, .follow .follow-container, .footer .footer-container, .portfolio:nth-child(odd) .portfolio-container, .portfolio:nth-child(even) .portfolio-container, .resume-description .description-container, .resume .resume-container {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -138,5 +138,66 @@ body {
 @media only screen and (max-width: 1000px) {
   .portfolio {
     grid-template-columns: auto 100% auto; } }
+/* -----------------------resume----------------------------- */
+.resume-description {
+  background-color: #576268;
+  color: #d7f4ff;
+  padding: 20px 0;
+  z-index: 1;
+  position: relative; }
+
+.resume {
+  display: grid;
+  grid-template-columns: auto 1000px auto;
+  font-size: 14px; }
+  .resume .resume-container {
+    padding: 0; }
+    .resume .resume-container h4 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #0099d2;
+      font-size: 1.2em; }
+    .resume .resume-container .section-1 {
+      flex-grow: 1;
+      padding: 30px 30px 10px 10px; }
+      .resume .resume-container .section-1 .personal {
+        border-collapse: collapse; }
+        .resume .resume-container .section-1 .personal td {
+          border-bottom: 1px solid #d8d8d8;
+          padding: 8px 10px 8px 0; }
+        .resume .resume-container .section-1 .personal td:nth-child(1) {
+          font-weight: 600; }
+      .resume .resume-container .section-1 .hobbies {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center; }
+        .resume .resume-container .section-1 .hobbies i {
+          background-color: #b3eaff;
+          color: #ffffff;
+          border-radius: 50%;
+          padding: 0.5em;
+          font-size: 2.2em;
+          width: 1em; }
+        .resume .resume-container .section-1 .hobbies p {
+          font-size: 0.75em; }
+    .resume .resume-container .section-2 {
+      width: 70%;
+      padding: 30px 20px 60px 40px;
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+      box-shadow: inset 2px 0px 3px #585858; }
+      .resume .resume-container .section-2 .details-container {
+        display: flex;
+        border-bottom: 1px solid #d8d8d8; }
+        .resume .resume-container .section-2 .details-container .details {
+          flex-grow: 4; }
+          .resume .resume-container .section-2 .details-container .details h5 {
+            margin: 10px 0;
+            font-size: 1em; }
+        .resume .resume-container .section-2 .details-container .year {
+          flex-grow: 1;
+          font-weight: 600; }
+  .resume .gray-background {
+    background-color: #f0f0f0; }
 
 /*# sourceMappingURL=style.css.map */

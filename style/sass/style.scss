@@ -1,5 +1,7 @@
 $dark-blue: #0089cd;
 $lite-blue: #08a1db;
+$dark-gray: #576268;
+$lite-gray: #d8d8d8;
 $gray: #f0f0f0;
 $font-lite-blue: #d7f4ff;
 $font-dark-blue: #0099d2;
@@ -216,5 +218,104 @@ body{
 @media only screen and (max-width: 1000px){
     .portfolio{
         grid-template-columns: auto 100% auto;
+    }
+}
+
+/* -----------------------resume----------------------------- */
+.resume-description{
+    background-color: $dark-gray;
+    color: $font-lite-blue;
+    padding: 20px 0;
+    z-index: 1;
+    position: relative;
+
+    .description-container{
+        @extend .container;
+    }
+}
+
+.resume{
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    font-size: 14px;
+
+    .resume-container{
+        @extend .container;
+        padding: 0;
+
+        h4{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: $font-dark-blue;
+            font-size: 1.2em;
+        }
+
+        .section-1{
+            flex-grow: 1;
+            padding: 30px 30px 10px 10px;
+
+            .personal{
+                border-collapse: collapse;
+
+                td{
+                    border-bottom: 1px solid $lite-gray;
+                    padding: 8px 10px 8px 0;
+                }
+
+                td:nth-child(1){
+                    font-weight: 600;
+                }
+            }
+
+            .hobbies{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                text-align: center;
+
+                i{
+                    background-color: #b3eaff;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    padding: 0.5em;
+                    font-size: 2.2em;
+                    width: 1em;
+                }
+
+                p{
+                    font-size: 0.75em;
+                }
+            }
+        }
+
+        .section-2{
+            width: 70%;
+            padding: 30px 20px 60px 40px;
+            box-sizing: border-box;
+            background-color: $gray;
+            box-shadow: inset 2px 0px 3px #585858;
+
+            .details-container{
+                display: flex;
+                border-bottom: 1px solid $lite-gray;
+
+                .details{
+                    flex-grow: 4;
+
+                    h5{
+                        margin: 10px 0;
+                        font-size: 1em;
+                    }
+                }
+
+                .year{
+                    flex-grow: 1;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .gray-background{
+        background-color: $gray;
     }
 }
