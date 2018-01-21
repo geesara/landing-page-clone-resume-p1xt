@@ -334,6 +334,49 @@ body{
                     font-weight: 600;
                 }
             }
+
+            .piechart-container{
+                display: flex;
+                justify-content: space-between;
+
+                .piechart-1, .piechart-2, .piechart-3, .piechart-4, .piechart-5{
+                    display: flex;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+
+                    .text{
+                        width: 100px;
+                        height: 100px;
+                        margin: auto;
+                        border-radius: 50%;
+                        background-color: $gray;
+                        text-align: center;
+                        line-height: 100px;
+                        font-weight: 600;
+                    }
+                }
+
+                .piechart-1{
+                    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, $dark-blue 50%), linear-gradient(250deg, $lite-gray 50%, $dark-blue 50%);                    
+                }
+
+                .piechart-2{
+                    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, $dark-blue 50%), linear-gradient(120deg, $lite-gray 50%, $dark-blue 50%);                    
+                }
+
+                .piechart-3{
+                    background: linear-gradient(90deg, $lite-gray 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(45deg, $lite-gray 50%, $dark-blue 50%);                    
+                }
+
+                .piechart-4{
+                    background: linear-gradient(90deg, $lite-gray 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(-45deg, $lite-gray 50%, $dark-blue 50%);                    
+                }
+
+                .piechart-5{
+                    background: linear-gradient(90deg, $lite-gray 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(90deg, $lite-gray 50%, $dark-blue 50%);                    
+                }
+            }
         }
     }
 

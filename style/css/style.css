@@ -211,6 +211,33 @@ body {
         .resume .resume-container .section-2 .details-container .year {
           flex-grow: 1;
           font-weight: 600; }
+      .resume .resume-container .section-2 .piechart-container {
+        display: flex;
+        justify-content: space-between; }
+        .resume .resume-container .section-2 .piechart-container .piechart-1, .resume .resume-container .section-2 .piechart-container .piechart-2, .resume .resume-container .section-2 .piechart-container .piechart-3, .resume .resume-container .section-2 .piechart-container .piechart-4, .resume .resume-container .section-2 .piechart-container .piechart-5 {
+          display: flex;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%; }
+          .resume .resume-container .section-2 .piechart-container .piechart-1 .text, .resume .resume-container .section-2 .piechart-container .piechart-2 .text, .resume .resume-container .section-2 .piechart-container .piechart-3 .text, .resume .resume-container .section-2 .piechart-container .piechart-4 .text, .resume .resume-container .section-2 .piechart-container .piechart-5 .text {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            text-align: center;
+            line-height: 100px;
+            font-weight: 600; }
+        .resume .resume-container .section-2 .piechart-container .piechart-1 {
+          background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, #0089cd 50%), linear-gradient(250deg, #d8d8d8 50%, #0089cd 50%); }
+        .resume .resume-container .section-2 .piechart-container .piechart-2 {
+          background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, #0089cd 50%), linear-gradient(120deg, #d8d8d8 50%, #0089cd 50%); }
+        .resume .resume-container .section-2 .piechart-container .piechart-3 {
+          background: linear-gradient(90deg, #d8d8d8 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(45deg, #d8d8d8 50%, #0089cd 50%); }
+        .resume .resume-container .section-2 .piechart-container .piechart-4 {
+          background: linear-gradient(90deg, #d8d8d8 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(-45deg, #d8d8d8 50%, #0089cd 50%); }
+        .resume .resume-container .section-2 .piechart-container .piechart-5 {
+          background: linear-gradient(90deg, #d8d8d8 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(90deg, #d8d8d8 50%, #0089cd 50%); }
   .resume .gray-background {
     background-color: #f0f0f0; }
 
