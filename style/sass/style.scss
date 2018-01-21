@@ -271,13 +271,13 @@ body{
             .tech{
                 width: 100%;
 
-                td{
-                    width: 45%;
+                td:first-child{
+                    width: 40%;
                     padding: 5px 0;
                 }
                 
                 .meter{
-                    height: 5px;
+                    height: 10px;
                     position: relative;
                     background-color: $gray;
                 }

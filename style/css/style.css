@@ -170,11 +170,11 @@ body {
           font-weight: 600; }
       .resume .resume-container .section-1 .tech {
         width: 100%; }
-        .resume .resume-container .section-1 .tech td {
-          width: 45%;
+        .resume .resume-container .section-1 .tech td:first-child {
+          width: 40%;
           padding: 5px 0; }
         .resume .resume-container .section-1 .tech .meter {
-          height: 5px;
+          height: 10px;
           position: relative;
           background-color: #f0f0f0; }
         .resume .resume-container .section-1 .tech .meter > span {
