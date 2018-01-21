@@ -291,16 +291,20 @@ body{
 
             .hobbies{
                 display: grid;
-                grid-template-columns: auto auto auto;
+                grid-template-columns: 80px 80px 80px;
+                justify-content: space-between;
                 text-align: center;
 
                 i{
                     background-color: #b3eaff;
                     color: #ffffff;
+                    width: 80px;
+                    height: 80px;
+                    line-height: 50px;
+                    box-sizing: border-box;
                     border-radius: 50%;
                     padding: 0.5em;
                     font-size: 2.2em;
-                    width: 1em;
                 }
 
                 p{
